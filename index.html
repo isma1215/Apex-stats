@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <title>Api Apex</title>
+</head>
+<body>
+    <header>
+        <nav class="nav_container">
+            <img src="./src/img/apex-logo.png" class="logo">
+            <h2>Apex Legend</h2>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="search-player">
+            <h2>Busca tu Perfil </h2>
+            <form>
+                <div class="cont-buscar"">
+                <input type="text" id="name-player" placeholder="TAG-NAME" class="name-player"><br>
+                <button id="buscar"class="buscar">Buscar</button> 
+                </div>
+
+                <div class="radio-gupo">
+                <label class="plataform">
+                    <input type="radio" name="plataform" id="PC" value="PC" checked="true">
+                    PC
+                    <span></span>
+                </label>    
+                
+                <label class="plataform">
+                    <input type="radio" name="plataform" id="PS4" value="PS4">
+                    PS4
+                    <span></span>
+                </label>
+                
+                <label class="plataform">
+                    <input type="radio" name="plataform" id="X1" value="X1">
+                    Xbox
+                    <span></span>
+                </label>
+                
+                <label class="plataform">
+                    <input type="radio" name="plataform" id="SWITCH" value="SWITCH">
+                    Switch
+                    <span></span>
+                </label>
+                
+                <br>
+                </div>
+            </form>
+           
+        </section>
+        <section id="player_sta" class="player_sta">
+         <span class="loader none" id="loader"></span>
+            
+        </section>
+        <section id="cards" class="cards">    
+        </section>
+         <h2 style="display:none;"id="error">Error: No se encontro el perfil / verifique que sea la plataforma correcta</h2>
+    </main>
+    <footer>
+
+    </footer>
+    
+    <script src="/src/js/Api.apex.js"></script>
+</body>
+</html>
